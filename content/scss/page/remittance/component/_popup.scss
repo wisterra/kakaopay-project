@@ -122,7 +122,7 @@ html.popup-active {
 .btn-remittance {
     position: relative;
     @include margin(top, 124);
-    @include margin(left, 10);
+    @include margin(left, 12);
     @include bg(734, 145, 'btn/btn-remittance.png')
 }
 

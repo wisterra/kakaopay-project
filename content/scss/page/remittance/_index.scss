@@ -85,6 +85,13 @@ h1 {
     @include bg(88, 105, 'effect/effect-neon2-em.png')
 }
 
+.effect-neon2-em2 {
+    position: absolute;
+    @include top(35);
+    @include left(165);
+    @include bg(429, 134, 'effect/effect-neon2-em2.png')
+}
+
 .effect-message {
     position: absolute;
     top: 0;
@@ -101,6 +108,33 @@ h1 {
     @include margin(top, -84);
     @include margin(left, 165);
     @include bg(113, 154, 'effect/effect-spark.png')
+}
+
+.effect-spark1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include margin(top, -84);
+    @include margin(left, 165);
+    @include bg(113, 154, 'effect/effect-spark1.png')
+}
+
+.effect-spark2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include margin(top, -84);
+    @include margin(left, 165);
+    @include bg(113, 154, 'effect/effect-spark2.png')
+}
+
+.effect-spark3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include margin(top, -84);
+    @include margin(left, 165);
+    @include bg(113, 154, 'effect/effect-spark3.png')
 }
 
 //---------------------------------------------------

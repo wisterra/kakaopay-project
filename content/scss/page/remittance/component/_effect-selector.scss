@@ -3,19 +3,50 @@
 //---------------------------------------------------
 // effect selector
 //---------------------------------------------------
+.topbar-deco {
+    animation: topbar-deco 550ms alternate infinite;
+}
+//---------------------------------------------------
 .effect-neon1 {
     animation: neonsign 1550ms infinite;
     animation-delay: 750ms
 }
 
 .effect-neon2-em {
-    animation: neonsign 450ms infinite;
+    animation: neonsign2 450ms infinite;
+    animation-delay: 750ms
+}
+
+.effect-neon2-em2 {
+    animation: neonsign2 450ms infinite;
     animation-delay: 750ms
 }
 
 .share-sns:before {
     animation: neonsign 1450ms infinite;
     animation-delay: 750ms
+}
+
+//---------------------------------------------------
+.effect-spark1 {
+    opacity:0;
+    animation: spark 450ms both;
+    animation-delay: 350ms;
+    transition-timing-function: ease
+}
+
+.effect-spark2 {
+    opacity:0;
+    animation: spark 450ms both;
+    animation-delay: 400ms;
+    transition-timing-function: ease-in
+}
+
+.effect-spark3 {
+    opacity:0;
+    animation: spark 450ms both;
+    animation-delay: 450ms;
+    transition-timing-function: ease-in
 }
 
 //---------------------------------------------------
@@ -67,11 +98,19 @@
     animation: btn-slide-up 1000ms
 }
 
+.btn-close {
+    animation: btn-close 1000ms
+}
+
 //---------------------------------------------------
 .effect-popup-top {
-    animation: popup-top 1000ms
+    transform: translate3d(0, -3000px, 0);
+    animation: popup-top 1000ms both;
+    animation-delay: 150ms;
 }
 
 .effect-popup-bottom {
-    animation: popup-bottom 1000ms
+    transform: translate3d(0, 3000px, 0);
+    animation: popup-bottom 1000ms both;
+    animation-delay: 150ms;
 }

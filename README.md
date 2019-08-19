@@ -20,19 +20,19 @@ scrollmagic과 css3 animation 으로 구현했습니다.
 저는 이번 제작에 있어 2번 방식으로 구현해보았습니다.
 
 1번 방식 width=640px
-장점: 고정픽셀을 사용할 수 있고 빠르게 제작할 수 있습니다.
-단점: input 등의 입력요소를 클릭하는 경우 화면이 확장될 수 있습니다. (입력 화면 지원을 위해 원래 사이즈로 돌아가는 현상)
+* 장점: 고정픽셀을 사용할 수 있고 빠르게 제작할 수 있습니다.
+* 단점: input 등의 입력요소를 클릭하는 경우 화면이 확장될 수 있습니다. (입력 화면 지원을 위해 원래 사이즈로 돌아가는 현상)
 
 2번 방식 device-width
 주로 텍스트 비중이 높은 반응형 사이트에서 많이 활용합니다.
-장점: 1번방식의 단점이 발생하지 않으며, 화면 모든 요소를 비율확장 방식으로 제공할 수 있습니다.
-단점: 작업시간이 오래걸리고 코드가 복잡합니다.
+* 장점: 1번방식의 단점이 발생하지 않으며, 화면 모든 요소를 비율확장 방식으로 제공할 수 있습니다.
+* 단점: 작업시간이 오래걸리고 코드가 복잡합니다.
 
 
 ### 성능 최적화
 image 압축, css minified 처리
 scss 마지막 세미콜론 제거
-웹 진단 도구를 통한 성능 확인 (PageSpeed Insights 테스트 사이트에서 구동성능 97% 확인)
+웹 진단 도구를 통한 성능 확인 (PageSpeed Insights <https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwisterra.github.io%2Fkakaopay-project%2Fpage%2Fremittance%2Findex.html&tab=mobile> 테스트 사이트에서 구동성능 97% 확인)
 
 
 ### 파일 디렉토리 구조 고려

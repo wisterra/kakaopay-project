@@ -32,7 +32,7 @@ scrollmagic과 css3 animation 으로 구현했습니다.
 ### 성능 최적화
 image 압축, css minified 처리
 scss 마지막 세미콜론 제거
-웹 진단 도구를 통한 성능 확인 (PageSpeed Insights <https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwisterra.github.io%2Fkakaopay-project%2Fpage%2Fremittance%2Findex.html&tab=mobile> 테스트 사이트에서 구동성능 97% 확인)
+웹 진단 도구를 통한 성능 확인 (PageSpeed Insights <https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwisterra.github.io%2Fkakaopay-project%2Fpage%2Fremittance%2Findex.html&tab=mobile> 테스트 사이트에서 구동성능 99% 확인)
 
 
 ### 파일 디렉토리 구조 고려

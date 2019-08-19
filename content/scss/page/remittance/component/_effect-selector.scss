@@ -1,0 +1,77 @@
+@import 'effect-keyframes';
+
+//---------------------------------------------------
+// effect selector
+//---------------------------------------------------
+.effect-neon1 {
+    animation: neonsign 1550ms infinite;
+    animation-delay: 750ms
+}
+
+.effect-neon2-em {
+    animation: neonsign 450ms infinite;
+    animation-delay: 750ms
+}
+
+.share-sns:before {
+    animation: neonsign 1450ms infinite;
+    animation-delay: 750ms
+}
+
+//---------------------------------------------------
+.effect-money {
+    animation: money 350ms infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-out
+}
+
+.effect-amount {
+    animation: amount 350ms infinite;
+    animation-direction: alternate
+}
+
+.effect-hand1 {
+    animation: hand1 350ms infinite;
+    animation-direction: alternate;
+    transition-timing-function: ease-in-out
+}
+
+.effect-hand2 {
+    animation: hand2 350ms infinite;
+    animation-direction: alternate
+}
+
+//---------------------------------------------------
+.effect-coin1 {
+    transition-duration: 550ms
+}
+
+.effect-coin2 {
+    transition-duration: 450ms
+}
+
+.effect-coin3 {
+    transition-duration: 350ms
+}
+
+.effect-coin-shower {
+    animation: coin-shower 950ms both
+}
+
+//---------------------------------------------------
+.effect-btn-apply {
+    animation: btn-slide-up 1000ms
+}
+
+.effect-btn-remittance {
+    animation: btn-slide-up 1000ms
+}
+
+//---------------------------------------------------
+.effect-popup-top {
+    animation: popup-top 1000ms
+}
+
+.effect-popup-bottom {
+    animation: popup-bottom 1000ms
+}

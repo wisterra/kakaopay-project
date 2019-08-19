@@ -1,0 +1,59 @@
+@import '../../../util/mixin/rwd-component-set';
+
+//---------------------------------------------------
+// share-sns
+//---------------------------------------------------
+.share-sns {
+    overflow: hidden;
+    @include component;
+    z-index:10;
+    @include margin(top, 70);
+    @include margin(bottom, 204)
+}
+
+.share-sns:before {
+    @include component-before;
+    margin: 0 auto;
+    @include bg(694, 181, 'share-sns-bg.png')
+}
+
+.share-sns-inner {
+    @include component-inner
+}
+
+.share-sns-group {
+    position: relative;
+    @include margin(top, 35)
+}
+
+.btn-kakaotalk {
+    position: absolute;
+    top:0;
+    left:0;
+    @include margin(left, 108);
+    @include bg(112, 134, 'icon/icon-kakaotalk.png')
+}
+
+.btn-kakaostory {
+    position: absolute;
+    top:0;
+    left:0;
+    @include margin(left, 250);
+    @include bg(114, 134, 'icon/icon-kakaostory.png')
+}
+
+.btn-facebook {
+    position: absolute;
+    top:0;
+    left:0;
+    @include margin(left, 386);
+    @include bg(112, 134, 'icon/icon-facebook.png')
+}
+
+.btn-twitter {
+    position: absolute;
+    top:0;
+    left:0;
+    @include margin(left, 520);
+    @include bg(140, 134, 'icon/icon-twitter.png')
+}

@@ -1,0 +1,136 @@
+@import '../../../util/mixin/rwd-component-set';
+
+//---------------------------------------------------
+// popup
+//---------------------------------------------------
+
+// popup active시 html에 부착
+html.popup-active {
+    overflow: hidden;
+    height: 100%
+}
+
+//---------------------------------------------------
+.popup {
+    display: none;
+    overflow: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    width: 100%;
+    height: 100vh;
+    background:#000
+}
+
+.popup-content {
+    position: relative;
+    overflow: hidden
+}
+
+.popup-top {
+    @include component
+}
+
+.popup-top:before {
+    @include component-before;
+    @include margin(top, -185);
+    @include bg(750, 767, 'popup-bg1.jpg')
+}
+
+.popup-top-inner {
+    @include component-inner
+}
+
+.deco-chain {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include margin(left, 38);
+    @include bg(146, 402, 'deco-chain.png')
+}
+
+.deco-coin {
+    position: relative;
+    @include margin(top, 285);
+    @include bg(196, 198, 'deco-coin.png');
+    @include align-center
+}
+
+.message-title {
+    position: relative;
+    @include margin(top, 45);
+    @include bg(545, 186, 'message-title.png');
+    @include align-center
+}
+
+.popup-bottom {
+    @include component;
+    top: -1px
+}
+
+.popup-bottom:before {
+    @include component-before;
+    @include bg(750, 767, 'popup-bg2.jpg')
+}
+
+.popup-bottom-inner {
+    @include component-inner
+}
+
+.event-information {
+    @include component
+}
+
+.event-information::before {
+    @include component-before;
+    position: relative;
+    @include margin(top, 46);
+    @include bg(585, 311, 'event-information-bg.png');
+    @include align-center
+}
+
+.event-information-inner {
+    @include component-inner
+}
+
+.event-information-text {
+    position: relative;
+    @include margin(top, 24);
+    @include margin(left, 110);
+    @include bg(442, 255, 'event-information-text.png')
+}
+
+.btn-coupon {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include margin(top, 17);
+    @include margin(right, 99);
+    @include bg(114, 48, 'btn/btn-coupon.png')
+}
+
+.btn-update {
+    position: absolute;
+    right: 0;
+    top: 0;
+    @include margin(top, 246);
+    @include margin(right, 139);
+    @include bg(155, 44, 'btn/btn-update.png')
+}
+
+.btn-remittance {
+    position: relative;
+    @include margin(top, 124);
+    @include margin(left, 10);
+    @include bg(734, 145, 'btn/btn-remittance.png')
+}
+
+.btn-close {
+    position: absolute;
+    top: 0;
+    @include right(35);
+    @include margin(top, 35);
+    @include bg(57, 59, 'btn/btn-close.png');
+    cursor: pointer
+}

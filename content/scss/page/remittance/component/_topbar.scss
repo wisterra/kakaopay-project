@@ -1,0 +1,43 @@
+@import '../../../util/mixin/rwd-component-set';
+
+//---------------------------------------------------
+// topbar
+//---------------------------------------------------
+.topbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    text-align: center
+}
+
+.topbar:before {
+    @include component-before;
+    @include height(70);
+    border-bottom: 1px solid #654935;
+    background-color: rgba(0, 0, 0, 0.3)
+}
+
+.topbar-inner {
+    @include component-inner;
+}
+
+.topbar-logo {
+    position: absolute;
+    @include top(32);
+    @include left(25);
+    @include bg(110, 22, 'topbar/logo-remittance.png')
+}
+
+.topbar-text {
+    @include bg(176, 22, 'topbar/topbar-title.png');
+    margin: 0 auto;
+    @include margin(top, 24)
+}
+
+.topbar-deco {
+    position: absolute;
+    @include top(-6);
+    @include right(0);
+    @include bg(224, 155, 'topbar/show-img.png')
+}

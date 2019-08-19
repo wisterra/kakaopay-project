@@ -1,0 +1,20 @@
+@import '../../../util/mixin/rwd-component-set';
+
+//---------------------------------------------------
+// 주차별 혜택
+.event-benefit {
+    @include component
+}
+
+.event-benefit:before {
+    @include component-before;
+    margin: 0 auto;
+    @include bg(555, 218, 'benefit-information-list.png')
+}
+
+.event-benefit-week {
+    position: absolute;
+    @include top(-10);
+    @include bg(218, 46, 'benefit-week-1.png');
+    @include align-center
+}

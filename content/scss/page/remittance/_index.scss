@@ -1,0 +1,192 @@
+@import '../../util/constant/event-mobile-various-size';
+@import '../../util/mixin/rwd-calcualtion';
+@import '../../component/common/a11y-hidden';
+@import './component/topbar';
+@import './component/event-benefit';
+@import './component/share-sns';
+@import './component/event-banner';
+@import './component/event-guide';
+@import './component/popup';
+@import './component/effect-selector';
+
+body {
+    background: #251812
+}
+
+h1 {
+    overflow: hidden;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    border: 0;
+    clip: rect(0 0 0 0);
+    /* IE 6,7 */
+    clip: rect(0, 0, 0, 0)
+}
+
+//---------------------------------------------------
+// event-container
+.event-container {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    height: auto;
+    background: url('../image/page-bg1.jpg') center top no-repeat fixed;
+    background-size: cover
+}
+
+//---------------------------------------------------
+// page-visual
+.main-visual {
+    position: relative;
+    @include height(55);
+    margin: 0 auto;
+    @include margin(top, 130)
+}
+
+.main-visual-title {
+    position: relative;
+    @include height(325)
+}
+
+.main-visual-amount {
+    position: relative;
+    @include margin(top, -100);
+    @include height(7)
+}
+
+//---------------------------------------------------
+// effect
+//---------------------------------------------------
+.effect-neon1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include margin(left, -5);
+    @include bg(429, 168, 'effect/effect-neon1.png');
+    @include align-center
+}
+
+.effect-neon2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include margin(top, 10);
+    @include bg(630, 330, 'effect/effect-neon2.png');
+    @include align-center
+}
+
+.effect-neon2-em {
+    position: absolute;
+    @include top(40);
+    @include left(270);
+    @include bg(88, 105, 'effect/effect-neon2-em.png')
+}
+
+.effect-message {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include margin(top, 227);
+    @include bg(461, 87, 'effect/effect-message.png');
+    @include align-center
+}
+
+.effect-spark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    @include margin(top, -84);
+    @include margin(left, 165);
+    @include bg(113, 154, 'effect/effect-spark.png')
+}
+
+//---------------------------------------------------
+.effect-money {
+    position: relative;
+    @include margin(left, 83);
+    @include bg(609, 363, 'effect/effect-money.png')
+}
+
+//---------------------------------------------------
+.effect-amount {
+    position: relative;
+    @include margin(left, 250);
+    @include bg(236, 115, 'effect/effect-amount.png')
+}
+
+.effect-hand1 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    @include margin(top, 25);
+    @include margin(left, -225);
+    @include bg(99, 82, 'effect/effect-hand-left.png')
+}
+
+.effect-hand2 {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    @include margin(top, 0);
+    @include margin(left, 126);
+    @include bg(104, 79, 'effect/effect-hand-right.png')
+}
+
+//---------------------------------------------------
+.effect-coin1 {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    z-index: 3;
+    width:100%;
+    @include margin(left, -125);
+    @include bg(1000, 826, 'effect/effect-coin1.png')
+}
+
+.effect-coin2 {
+    position: absolute;
+    top: -40%;
+    right: 0;
+    z-index: 2;
+    width:100%;
+    @include bg(750, 826, 'effect/effect-coin2.png')
+}
+
+.effect-coin3 {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    z-index: 1;
+    width:100%;
+    @include margin(left, -125);
+    @include bg(1000, 832, 'effect/effect-coin3.png')
+}
+
+.effect-coin-shower {
+    position: absolute;
+    top: -40%;
+    left: 0;
+    z-index: 5;
+    @include bg(750, 903, 'effect/effect-coin-shower.png')
+}
+
+//---------------------------------------------------
+.deco-coin-tower {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    @include bg(750, 183, 'effect/effect-coin-tower.png')
+}
+
+.btn-apply {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 11;
+    @include margin(left, 15);
+    @include margin(bottom, 40);
+    @include bg(734, 148, 'btn/btn-apply.png')
+}

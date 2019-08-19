@@ -1,0 +1,11 @@
+@import '../../../util/mixin/rwd-component-set';
+
+//---------------------------------------------------
+// event-banner
+.event-banner {
+    @include component
+}
+
+.event-banner-img {
+    width: 100%
+}

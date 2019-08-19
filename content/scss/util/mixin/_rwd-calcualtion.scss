@@ -1,0 +1,60 @@
+//---------------------------------------------------
+// 반응형 계산식
+//---------------------------------------------------
+
+// for position property
+@mixin top ($size) {
+    top: $size * 1%
+}
+
+// for position property
+@mixin left ($size) {
+    left: $size / $MOBILE-STANDARD-WIDTH * 100%
+}
+
+// for position property
+@mixin right ($size) {
+    right: $size / $MOBILE-STANDARD-WIDTH * 100%
+}
+
+// width
+@mixin width ($size) {
+    width: $size / $MOBILE-STANDARD-WIDTH * 100%
+}
+
+// height
+@mixin height ($size) {
+    padding-bottom: $size / $MOBILE-STANDARD-WIDTH * 100%
+}
+
+// margin
+@mixin margin ($position, $size) {
+    margin-#{$position}: $size / $MOBILE-STANDARD-WIDTH * 100%
+}
+
+// padding
+@mixin padding ($position, $size) {
+    padding-#{$position}: $size / $MOBILE-STANDARD-WIDTH * 100%
+}
+
+// image background
+@mixin bg ($width, $height, $src) {
+    width: $width / $MOBILE-STANDARD-WIDTH * 100%;
+    padding-bottom: $height / $MOBILE-STANDARD-WIDTH * 100%;
+    background: url('../image/'+$src) center center no-repeat;
+    background-size: contain
+}
+
+// align
+@mixin align-center {
+    left: 50%;
+    transform: translateX(-50%)
+}
+
+// input height
+@mixin input-height($size) {
+    $value: $size / $MOBILE-STANDARD-WIDTH * 100% /2;
+    padding-top: $value;
+    padding-bottom: $value;
+    line-height: 100%
+}

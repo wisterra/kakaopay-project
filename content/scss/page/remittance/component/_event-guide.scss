@@ -1,0 +1,23 @@
+@import '../../../util/mixin/rwd-component-set';
+
+//---------------------------------------------------
+// event-guide
+.event-guide {
+    @include component
+}
+
+.event-guide:before {
+    @include component-before;
+    @include bg(750, 592, 'page-bg2.jpg');
+    background-attachment: fixed
+}
+
+.event-guide-inner {
+    @include component-inner
+}
+
+.event-guide-text {
+    @include margin (top, 37);
+    @include margin (left, 40);
+    @include bg(664, 378, 'event-guide-text.png')
+}

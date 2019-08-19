@@ -26,13 +26,14 @@ scrollmagic과 css3 animation 으로 구현했습니다.
 2번 방식 device-width
 주로 텍스트 비중이 높은 반응형 사이트에서 많이 활용합니다.
 장점: 1번방식의 단점이 발생하지 않으며, 화면 모든 요소를 비율확장 방식으로 제공할 수 있습니다.
-단점: 작업시간이 오래걸리고 코드가 복잡합니다.
+단점: 작업시간이 오래걸리고 코드가 복잡합니다.`
 
 
 ### 성능 최적화
 image 압축, css minified 처리
 scss 마지막 세미콜론 제거
-웹 진단 도구를 통한 성능 확인 (PageSpeed Insights 테스트 사이트에서 구동성능 97% 확인)
+웹 진단 도구 테스트
+- PageSpeed Insights <https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fwisterra.github.io%2Fkakaopay-project%2Fpage%2Fremittance%2Findex.html&tab=mobile> : 100%
 
 
 ### 파일 디렉토리 구조 고려

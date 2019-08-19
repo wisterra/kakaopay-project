@@ -17,7 +17,7 @@ scrollmagic과 css3 animation 으로 구현했습니다.
 1. width=640px
 2. width=device-width
 
-<u>이번 제작에는 2번 방식으로 구현해보았습니다.</u>
+**이번 제작에는 2번 방식으로 구현해보았습니다.**
 
 1번 방식 width=640px
 * 장점: 고정픽셀을 사용할 수 있고 빠르게 제작할 수 있습니다.
